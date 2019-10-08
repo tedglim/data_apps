@@ -7,3 +7,7 @@ This is an exploration of a Pokemon dataset where I try to find any hints of a t
 <h1>KMeans Application</h1>
 This is an application of KMeans on the same Pokemon dataset where I try to find organic groups within the Top Special Tank Pokemon.</br>
 <a href="https://github.com/tedglim/data_apps/tree/master/src/kmeans_app">Click here</a>
+
+<h1>Ticket To Ride Europe Elementary Analysis</h1>
+This is an elementary analysis of the boardgame Ticket To Ride Europe where I look at how to earn the most points for each Train Card used.</br>
+<a href="https://github.com/tedglim/data_apps/tree/master/src/ticket_to_ride">Click here</a>
