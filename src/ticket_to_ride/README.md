@@ -7,14 +7,14 @@ This analysis aims to inform players's decision-making by illustrating to what d
 <h3>Route Length</h3>
 In TTRE, players will earn more points for claiming longer routes, making it more efficient to use Train Cards on longer routes.</br>
 
-![PointsPerRoute](../../images/ttre/PointsPerRoute.png)
-![PointsPerRouteRatio](../../images/ttre/PointsPerRouteRatio.png)</br>
+![PointsPerRoute0](../../images/ttre/PointsPerRoute0.png)
+![PointsPerRouteRatio0](../../images/ttre/PointsPerRouteRatio0.png)</br>
 From this observation, a player may notice that a simple strategy is to claim the longest routes ASAP.</br>
 <h3>Route Colors</h3>
 Train Routes come in 9 different colors: 8 Main Colors (Green, Blue, White, Purple, Black, Red, Orange, Yellow) and 1 "Wild" Color (Gray). We first see which color of routes yield the most total points.
 
-![MainColorPoints](../../images/ttre/MainColorPoints.png)
-![AllColorPoints](../../images/ttre/AllColorPoints.png)</br>
+![MainColorPoints0](../../images/ttre/MainColorPoints0.png)
+![AllColorPoints0](../../images/ttre/AllColorPoints0.png)</br>
 We see that Green/Blue are the colors that have the most potential points out of the main colors, while Orange/Yellow have the least potential points. However, both pale in comparison to the total potential points that the Gray routes offer.</br>
 We can  look at why this is the case in this breakdown of the routes.
 
