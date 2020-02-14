@@ -108,7 +108,7 @@ After calculating the Grade values for the Sweeper and Tank roles per Pokemon ty
 * Physical Tanks: Rock/Steel are solid types when looking for a Physical Tank.</br>
 * Special Tanks: No specific Pokemon Type really shines here, but Fairy types could be a good place to start looking.</br>
 * <b>Note</b> Ice and Dragons are the only types that have positive grades for all roles, so if you are looking for a well-rounded Pokemon, look at these types.</br>
-This is a basic exploration that hints at trends between roles and types of Pokemon and can hopefully serve as a mini-guide for players to find the right Pokemon for their party when starting a Pokemon game. </br>
+This is a visual exploration that hints at trends between roles and types of Pokemon and can hopefully serve as a mini-guide for players to find the right Pokemon for their party when starting a Pokemon game. </br>
 There are some cautions to take when evaluating this exploration. Metrics for determining compatibility of a Pokemon and a role are arguable as players may value different stats or weightings when looking for an offensive Pokemon.</br>
 Additionally, Pokemon like Pinsir placed high as Physical Sweepers on this metric, other features like Moveset Potential as a factor in the Physical Sweeper role were not factored in.</br>
 Overall, type selection is a good start for creating a strong Pokemon team, but there are many other factors to consider. After seeing anomalies like Blissey, Pinsir, Umbreon, etc, one could wonder if type is the best grouping to determine Pokemon best suitable for a role, or if there are other factors or groupings that better detail the trend of good offensive/defensive Pokemon.</br>
