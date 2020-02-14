@@ -84,7 +84,7 @@ After calculating the Grade values for the Sweeper and Tank roles per Pokemon ty
 <b>Physical Tanks: Median/Mean Distribution</b></br>
 
 ![PTank](../../images/explore/PTank.png)</br>
-<b>Top 10</b></br>
+<b>Top 10 Physical Tanks</b></br>
 
 ![PTankText](../../images/explore/P_Tank_Text.png)</br>
 <b>Physical Tanks: Takeaways</b></br>
@@ -94,7 +94,7 @@ After calculating the Grade values for the Sweeper and Tank roles per Pokemon ty
 <b>Special Tanks: Median/Mean Distribution</b></br>
 
 ![SPTank](../../images/explore/SPTank.png)</br>
-<b>Top 10</b></br>
+<b>Top 10 Special Tanks</b></br>
 
 ![SPTankText](../../images/explore/SP_Tank_Text.png)</br>
 <b>Special Tanks: Takeaways</b></br>
@@ -107,9 +107,7 @@ After calculating the Grade values for the Sweeper and Tank roles per Pokemon ty
 * Special Sweepers: Fire types seem to be a strong choice for a Special Sweeper. If more type diversity is needed, look at Electric, Flying, or Normal types</br>
 * Physical Tanks: Rock/Steel are solid types when looking for a Physical Tank.</br>
 * Special Tanks: No specific Pokemon Type really shines here, but Fairy types could be a good place to start looking.</br>
-* <b>Note</b> Ice and Dragons are the only types that have positive grades for all roles, so if you are looking for a well-rounded Pokemon, look at these types.
-</br>
-
+* <b>Note</b> Ice and Dragons are the only types that have positive grades for all roles, so if you are looking for a well-rounded Pokemon, look at these types.</br>
 This is a basic exploration that hints at trends between roles and types of Pokemon and can hopefully serve as a mini-guide for players to find the right Pokemon for their party when starting a Pokemon game. </br>
 There are some cautions to take when evaluating this exploration. Metrics for determining compatibility of a Pokemon and a role are arguable as players may value different stats or weightings when looking for an offensive Pokemon.</br>
 Additionally, Pokemon like Pinsir placed high as Physical Sweepers on this metric, other features like Moveset Potential as a factor in the Physical Sweeper role were not factored in.</br>
