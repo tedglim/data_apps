@@ -28,8 +28,6 @@ Since players will be holding cards throughout the game, holding the higher valu
 
 <h2>Destination Tickets</h2>
 <h3>Ticket Efficiency</h3>
-Instead of focusing on which Destination Tickets give the most points, we want to know which Destination Tickets give the most points per Train Card used.</br>
-
 We measure the value of Destination Tickets by taking the (Destination Ticket Points + Points per Route Length) / (Route Length). To calculate the Points per Route Length for each Destination Ticket, we assume the Route Length is the shortest possible path from city A to city B on the Destination Ticket <a href="https://boardgamegeek.com/thread/339111/ttr-europe-ticket-analysis">(Credits to gunnarorn for compiling this information)</a>.</br>
 
 <img src="../../images/ttre/DestinationTicketHistogram.png" width="1200" height="250"></br>
@@ -42,13 +40,12 @@ We look at a table of the top 20 most efficient Destination Tickets.</br>
 
 <img src="../../images/ttre/Top20Tickets.png" width="300" height="300"></br>
 
-Here we see that the Top 11 Destination Tickets upon completion make the routes that were used to complete them as efficient as standalone length 6 routes. Additionally, we notice that the Top 20 Destination Tickets all incorporate at least 1 length 4 route in their shortest route path.</br>
-
+Here we see that the Top 11 Destination Tickets, upon completion, make the routes that were used to complete them as efficient as standalone length 6 routes. Additionally, we notice that the Top 20 Destination Tickets all incorporate at least 1 length 4 route in their shortest route path.</br>
 One possible strategy that arises from this observation is to complete as many high value Destination Tickets as soon as possible.</br>
 
 <h2>Conclusion</h2>
 From this analysis, the takeaway is that the length 8 route, the 2 length 6 routes, and Destination Tickets with at least 1 length 4 route in its shortest path are high value objectives to claim while playing TTRE because they maximize a player's points per Train Card used. Additionally, two basic strategies arose from this analysis: claiming longest routes and completing point efficient Destination Tickets.</br>
 
-In the future, it would be interesting to discuss which strategy is appropriate for what situations as both have pros and cons. With the longest route strategy, players are not claiming routes frequently, but they are turn-efficient; that is, they use many Train Cards in a single turn for the most amount of points. With the Destination Tickets, players make shorter routes more point efficient, but they take more turns to use the same amount of Train Cards for a similar amount of points. The question then is if the longest route strategy is better because it causes the game to finish more quickly? Another dimension to look into would be how each strategy is affected with a different number of players.</br>
+In the future, it would be interesting to discuss which strategy is appropriate for what situations as both have pros and cons. With the longest route strategy, players are not claiming routes frequently, but they are turn-efficient; that is, they use many Train Cards in a single turn for the most amount of points. With the Destination Tickets, players make shorter routes more point efficient, but they take more turns to use the same amount of Train Cards for a similar amount of points. Another dimension to look into would be how each strategy is affected with a different number of players.</br>
 
-TTRE is one of those easy to learn but hard to master games where it may be that only real game experience may give us the answers.
+TTRE is one of those easy to learn but hard to master games where it may be that only real game experience may help players develop their own preferred strategy.

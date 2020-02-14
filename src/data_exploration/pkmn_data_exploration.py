@@ -124,11 +124,21 @@ def analyze_roles(df):
     mod_plot_df(df, p_tank_stats, 'Physical Tank')
     mod_plot_df(df, sp_tank_stats, 'Special Tank')
 
+# def explore_t3(df, arr):
+#     for type in arr:
+#         t3x = df[(df.type1 == type) | (df.type2 == type)]
+#         print(type + ": ")
+#         print(t3x["speed"].median())
+
 def main():
     df = load_data_frame()
     df_clean = clean_df(df)
     explore_types(df_clean)
     stats = ['hp', 'attack', 'defense', 'sp_attack', 'sp_defense', 'speed']
+    # types = ['grass', 'fire', 'water', 'bug', 'normal', 'poison', 'electric', 'ground', 'fairy', 'fighting', 'psychic', 'rock', 'ghost', 'ice', 'dragon', 'dark', 'steel', 'flying']
+    # print(df_clean.type1.unique())
+    # t3 = df_clean.copy()
+    # explore_t3(t3, types)
     explore_stats_wrapper(df_clean, stats)
     explore_top_wrapper(df_clean, stats)
     analyze_roles(df_clean)

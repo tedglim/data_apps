@@ -3,25 +3,25 @@ This is a Pandas Python exploration of a Pokemon dataset. The dataset was found 
 </br>
 
 <h2>Intro</h2></br>
-2 roles in a balanced Pokemon party are 'Sweepers' and 'Tanks'. Sweepers are characterized by high speed and high offensive power. Tanks are characterized by high defensive power and lots of hit points. Often players will look to fill these roles ASAP when engaging with a Pokemon game.
+2 roles in a balanced Pokemon party are 'Sweepers' and 'Tanks'. Sweepers are characterized by high speed and high offensive power. Tanks are characterized by high defensive power and high health.
 </br>
 
 <h2>Goal</h2></br>
-I believe some Pokemon types are more inclined towards certain roles than others. This exploration will hope to reveal hints or trends on whether a relationship between Pokemon types and roles exists.
+The hypothesis is that some Pokemon types are more inclined towards certain roles than others. This exploration will aim to reveal trends on whether a relationship between Pokemon types and roles exists.
 </br>
 
 <h2>Preprocessing</h2></br>
-Inspecting the dataset, there were missing values in the columns: height, weight, percentage_male, and type2. For my purposes, only type2 is a concern, so I filtered the dataset down to Pokemon names, base stats, and types and filled empty type2 values with 'None'. Legendaries were not considered as they are usually outliers.
+Inspecting the dataset, there were missing values in the columns: height, weight, percentage_male, and type2 (secondary Pokemon type). Since only type2 is of concern, I filtered the dataset down to Pokemon names, base stats, and types and filled empty type2 values with 'None'. Legendaries were not considered as they are usually outliers.
 </br>
 
 <h2>Exploring</h2></br>
-First, I'll check the primary and secondary type distribution to see the frequency of each Pokemon type. </br>
+First, we check the primary and secondary type distribution to see the frequency of each Pokemon type. </br>
 
 ![Type1_Frequencies](../../images/explore/T1_Freq.png)
 ![Type1_Frequencies_Text](../../images/explore/T2_Freq.png)
 
 * ~15% of Pokemon have a primary type of Water. Many bodies of water scattered around the different Pokemon regions gives plenty of opportunity to have different Water Pokemon species.</br>
-* ~14% of Pokemon have a primary type of Normal. The Normal type seems logical as a common type since they are the 'everday' type and can appear in patches of grass no matter the terrain or weather. </br>
+* ~14% of Pokemon have a primary type of Normal. The Normal type seems logical as a common type since they are the 'everyday' type and can appear in patches of grass no matter the terrain or weather. </br>
 * Flying is deceivingly low as a primary type as it is the most common secondary type at ~11.6% of Pokemon. </br>
 
 Now we'll do a cursory look to see which primary Pokemon types seem to excel at which stats</br>
@@ -34,7 +34,7 @@ Now we'll do a cursory look to see which primary Pokemon types seem to excel at 
 <b>HP</b></br>
 Fairy types appear to have the highest HP as a primary type, and Normal Types have a heavily skewed mean_hp due to Pokemon like Blissey and Chansey with abnormally high HP stats.</br>
 <b>ATK</b></br>
-Fighting types appear to have the highest ATK amongst the median; however, high ATK Pokemon of other types make Fighting types stand out less when compared amongst the mean Pokemon ATK.</br>
+Fighting types appear to have the highest ATK amongst the median. They're less of a standout compared amongst the mean.</br>
 <b>DEF</b></br>
 Steel and Rock type are the strongest in the DEF stat by a large margin.</br>
 <b>SP ATK</b></br>
@@ -42,21 +42,24 @@ Pokemon types that are strong in SP_ATK appear well-varied across the median; ho
 <b>SP DEF</b></br>
 Steel, Fairy, and Ghosts seem to do well in the SP_DEF stat, but Fairy types on average are much stronger in this base stat.</br>
 <b>SPD</b></br>
-Flying and Electric types are strongest in SPD. However, this stat for Flying types is slightly misleading due to there only being 2 Pokemon categorized as a primary Flying type.</br>
+Flying and Electric types are strongest in SPD. However, a caveat is that there are only 2 Pokemon categorized as a primary Flying type.</br>
 
 <h2>Defining 'Sweepers' and 'Tanks'</h2></br>
 <b>Sweepers</b></br>
 Strike hard, Strike first. There are 2 types: Physical and Special. A Sweeper Index will be made to judge a Pokemon's compatibility with the role.</br>
-Offensive stats and Speed stats will be standardized and the mean of the standardized stat values will be the Sweeper Grade.</br></br>
+Offensive stats and Speed stats will be aggregated then standardized to become the Sweeper Grade.</br></br>
 <b>Tanks</b></br>
 Reduce and absorb damage. There are 2 types: Physical and Special. A Tank Index will be made to judge a Pokemon's compatibility with the role. </br>
-Defensive stats and HP stats will be standardized and the mean of the standardized stat values will be the Tank Grade.
-</br>
+Defensive stats and HP stats will be aggregated then standardized to become the Tank Grade.</br></br>
 
 <h2>Results</h2></br>
 After calculating the Grade values for the Sweeper and Tank roles per Pokemon type (Normal, Water, etc.) and class-type (Type1/Type2), the median and mean the Grade values for all Pokemon types across both class-types were taken and plotted.</br></br>
 
-![PSweep](../../images/explore/PSweep.png)</br>
+<b>Physical Sweepers: Median/Mean Distribution</b></br>
+
+![PSweep](../../images/explore/PSweep.png)</br></br>
+<b>Top 10</b></br>
+
 ![PSweepText](../../images/explore/P_Sweep_Text.png)</br>
 <b>Physical Sweepers: Takeaways</b></br>
 * Fighting and Dark types seem to be dominant in the Physical Sweeper role while Dragon is a close runner-up. </br>
@@ -64,20 +67,32 @@ After calculating the Grade values for the Sweeper and Tank roles per Pokemon ty
 * Psychics have one of the biggest positional shifts between median and mean, suggesting that Psychics are on average much weaker Physical Sweepers than other types.</br>
 * Beedrill, Heracross, and Pinsir are surprising top Physical Sweepers even though Bug types overall are generally poor performers as Physical Sweepers.</br></br>
 
-![SPSweep](../../images/explore/SPSweep.png)</br>
+<b>Special Sweepers: Median/Mean Distribution</b></br>
+
+![SPSweep](../../images/explore/SPSweep.png)</br></br>
+<b>Top 10</b></br>
+
 ![SPSweepText](../../images/explore/SP_Sweep_Text.png)</br>
 <b>Special Sweepers: Takeaways</b></br>
 * Fire leads the way as one of the strongest Special Sweepers followed closely by Electric, Normal, and Flying types.</br>
 * Rock, Bug, and Ground types seem to be among the worst performers in this role.</br>
 * Sceptile(Grass) and Lucario(Fighting/Steel) are anomalies. Both are atypical as each has high Special Attack stats as opposed to the average Pokemon of their respective types.</br></br>
 
+<b>Physical Tanks: Median/Mean Distribution</b></br>
+
 ![PTank](../../images/explore/PTank.png)</br>
+<b>Top 10</b></br>
+
 ![PTankText](../../images/explore/P_Tank_Text.png)</br>
 <b>Physical Tanks: Takeaways</b></br>
 * Rock and Steel are clearly the top runners for Physical Tanks. Aggron and Steelix seem to represent their types well. Normal and Flying types on average appear to be the worst performers. </br>
 * Blissey, Chansey, Slaking, and Wobbuffet are atypical compared to the rest of the Pokemon of their respective types, but perform well due to high HP stats.</br></br>
 
+<b>Special Tanks: Median/Mean Distribution</b></br>
+
 ![SPTank](../../images/explore/SPTank.png)</br>
+<b>Top 10</b></br>
+
 ![SPTankText](../../images/explore/SP_Tank_Text.png)</br>
 <b>Special Tanks: Takeaways</b></br>
 * Types that are decent performers in this role are diverse. Fairy, Ice, Fighting, and Psychic Pokemon all have fairly decent Special Defense stats. </br>
