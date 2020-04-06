@@ -1,5 +1,8 @@
 # Pandas_Data_Exploration
 This is a Pandas Python exploration of a Pokemon dataset. The dataset was found [here](https://www.kaggle.com/rounakbanik/pokemon) on Kaggle from user: rounakbanik.</br>
+If you're interested in a machine learning perspective on this dataset, you might be interested in this
+<a href="https://github.com/tedglim/data_apps/tree/master/src/kmeans_app">Pokemon KMeans Analysis</a> or
+this <a href="https://github.com/tedglim/data_apps/blob/master/src/data_exploration/pkmn_ml.ipynb">Pokemon Classification Problem</a>.
 
 <h2>Intro</h2>
 2 roles in a balanced Pokemon party are 'Sweepers' and 'Tanks'. Sweepers are characterized by high speed and high offensive power. Tanks are characterized by high defensive power and high health.</br>
